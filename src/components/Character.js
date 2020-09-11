@@ -5,17 +5,18 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   padding: 2rem 2.5rem;
   width: 32%;
-  height: 30rem;
+  height: 32rem;
 `;
 const Card = styled.div`
   width: 90%;
-  height: 100%;
+  height: 95%;
   margin: 0 auto;
   padding: 2rem 1rem;
   background-color: white;
   border-radius: 8px;
   &:hover {
     width: 95%;
+    height: 100%;
   }
 `;
 const CardImg = styled.img`
