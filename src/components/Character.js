@@ -1,6 +1,15 @@
 // Write your Character component here
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const big_card = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+`;
 
 const Wrapper = styled.div`
   padding: 2rem 2.5rem;
@@ -15,8 +24,7 @@ const Card = styled.div`
   background-color: white;
   border-radius: 8px;
   &:hover {
-    width: 95%;
-    height: 100%;
+    animation: ${big_card} infinite 2s linear;
   }
 `;
 const CardImg = styled.img`
