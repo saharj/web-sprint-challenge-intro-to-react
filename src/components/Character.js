@@ -7,7 +7,7 @@ const big_card = keyframes`
     transform: scale(1);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `;
 
@@ -24,7 +24,7 @@ const Card = styled.div`
   background-color: white;
   border-radius: 8px;
   &:hover {
-    animation: ${big_card} infinite 2s linear;
+    animation: ${big_card} 2 0.8s linear;
   }
 `;
 const CardImg = styled.img`
