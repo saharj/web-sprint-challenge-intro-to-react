@@ -10,12 +10,12 @@ const Characters = (props) => {
   }, [props.charList]);
 
   return (
-    <>
+    <div className="row">
       {charList &&
         charList.map((char) => {
           return <Character key={uuid.v4()} charData={char} />;
         })}
-    </>
+    </div>
   );
 };
 
